@@ -10,7 +10,7 @@ export async function run() {
             installDir: core.getInput("installDir", { required: false }), 
             workingDir: core.getInput("workingDir", { required: false }),
             compilerConfig: core.getInput("compilerConfig", { required: false }),
-            testConfig: core.getInput("testConfig", { required: false }),
+            testConfig: core.getInput("testConfig", { required: false }) //deleted a comma 
             reportDir: core.getInput("reportDir", { required: false }),
             reportFormat: core.getInput("reportFormat", { required: false }),
             input: core.getInput("input", { required: false }),
