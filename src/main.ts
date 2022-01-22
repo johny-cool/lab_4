@@ -1,4 +1,4 @@
-import * as core from "@actions/core";
+import * as core from "@actions/core"; //main file
 
 import { messages } from './messages';
 import * as runner from './runner';
