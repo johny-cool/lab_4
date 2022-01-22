@@ -1,7 +1,7 @@
-import * as core from "@actions/core"; // main file 
+import * as core from "@actions/core"; // main file
 
 import { messages } from './messages';
-import * as runner from './runner';
+import * as runner from './runner'; // some description
 
 export async function run() {
     try {
@@ -11,7 +11,7 @@ export async function run() {
             workingDir: core.getInput("workingDir", { required: false }),
             compilerConfig: core.getInput("compilerConfig", { required: false }),
             testConfig: core.getInput("testConfig", { required: false }),
-            reportDir: core.getInput("reportDir", { required: false }) // deleted 
+            reportDir: core.getInput("reportDir", { required: false }),
             reportFormat: core.getInput("reportFormat", { required: false }),
             input: core.getInput("input", { required: false }),
             additionalParams: core.getInput("additionalParams", { required: false }),
