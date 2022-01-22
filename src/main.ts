@@ -7,7 +7,7 @@ export async function run() {
     try {
         
         const runOptions: runner.RunOptions = {
-            installDir: core.getInput("installDir", { required: false }),
+            installDir: core.getInput("installDir", { required: false }) // deleted comma 
             workingDir: core.getInput("workingDir", { required: false }),
             compilerConfig: core.getInput("compilerConfig", { required: false }),
             testConfig: core.getInput("testConfig", { required: false }),
