@@ -1,4 +1,4 @@
-import * as core from "@actions/core"; // main file
+import * as core from "@actions/core"; // main file 
 
 import { messages } from './messages';
 import * as runner from './runner';
@@ -8,7 +8,7 @@ export async function run() {
         
         const runOptions: runner.RunOptions = {
             installDir: core.getInput("installDir", { required: false }),
-            workingDir: core.getInput("workingDir", { required: false })
+            workingDir: core.getInput("workingDir", { required: false }),
             compilerConfig: core.getInput("compilerConfig", { required: false }),
             testConfig: core.getInput("testConfig", { required: false }),
             reportDir: core.getInput("reportDir", { required: false }),
