@@ -11,7 +11,7 @@ export async function run() {
             workingDir: core.getInput("workingDir", { required: false }),
             compilerConfig: core.getInput("compilerConfig", { required: false }),
             testConfig: core.getInput("testConfig", { required: false }),
-            reportDir: core.getInput("reportDir", { required: false }),
+            reportDir: core.getInput("reportDir", { required: false }) // deleted 
             reportFormat: core.getInput("reportFormat", { required: false }),
             input: core.getInput("input", { required: false }),
             additionalParams: core.getInput("additionalParams", { required: false }),
